@@ -1,0 +1,340 @@
+.main{   
+}
+    .wrap{
+        width: 900px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+        .resume_box{
+            padding: 20px 50px;
+            box-shadow: 5px 5px 20px 5px #ccc;
+            border-radius: 15px;
+            margin: 25px auto;
+        }
+            .resume_title{
+                line-height: 52px;
+            }
+            .resume_title h2{
+                font-size: 26px;
+                display: inline-block;
+                margin-right: 5px;
+            }
+            .resume_title span.en{
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+
+            .resume_selfIntro{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #88c7bb;
+                margin-bottom: 25px;
+
+            }
+                .resume_selfL{
+                    width: calc(100% - 150px);
+                }
+                    .resume_name{
+                        
+                    }
+
+                    .resume_name h1{
+                        font-size: 32px;
+                        letter-spacing: 1px;
+                        line-height: 64px;
+                    }
+
+                    .resume_infoArea{
+                        padding: 15px 20px;
+                    }
+                        .resume_info{
+                            line-height: 1.5;
+                            letter-spacing: 1px;
+                        }
+                        .resume_info i{
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 3px;
+                            margin-bottom: 3px;
+                            color: #88c7bb;
+                            
+                        }
+                        .resume_info span{
+                            font-size: 20px;
+                        }
+
+
+
+                .resume_selfR{
+                    width: 150px;
+                }
+                    .resume_avatar{
+                        width: 150px;
+                        border-radius: 15px;
+                        overflow: hidden;
+                    }
+                    
+                    .resume_avatar img{
+                        width: 100%;
+                        height: auto;
+                    }
+
+            .resume_contentBox{
+                padding-bottom: 25px;
+                border-bottom: 1px solid #88c7bb;
+                margin-bottom: 25px;
+            }
+            .resume_contentBox.lastBox{
+                padding-bottom: 25px;
+                border-bottom: unset;
+                margin-bottom: 25px;
+            }
+                .resume_content{
+                    line-height: 1.5;
+                    padding: 10px 20px;
+
+                }
+                .resume_content span{
+                    font-size: 18px;
+                }
+
+                .resume_iconArea{
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                }
+
+                    .resume_icon{
+                        margin: 0 15px 15px 0;
+                    }
+
+                    .resume_icon span{
+                        font-size: 18px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        padding: 10px 10px;
+                    }
+
+                    .resume_icon span::before{
+                        content: '';
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 5px;
+                        margin-bottom: 6px;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+
+                    .resume_icon span.html::before{
+                        background-image: url(../images/html.png);
+                    }
+                    .resume_icon span.css::before{
+                        background-image: url(../images/css.png);
+                    }
+                    .resume_icon span.js::before{
+                        background-image: url(../images/js.png);
+                    }
+                    .resume_icon span.vue::before{
+                        background-image: url(../images/vue.png);
+                    }
+                    .resume_icon span.nodejs::before{
+                        background-image: url(../images/nodejs.png);
+                    }
+                    .resume_icon span.c::before{
+                        background-image: url(../images/c++.png);
+                    }
+                
+                .resume_listArea{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                } 
+                    .resume_list{
+                        width: 30%;
+                        border: 1px solid #88c7bb;
+                        overflow: hidden;
+                        margin-top: 30px;
+                    }
+                    .resume_list.first{
+                        margin-top: 0px;
+                    }      
+                        .resume_listImg{
+                            
+                        }
+
+                        .resume_listImg:hover{
+                            transform: scale(1.1);
+                            transition: 0.3s ease all;
+                        }
+
+                        .resume_listImg img{
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .resume_listBox{
+                            padding: 10px 15px;
+
+                        }
+
+                            .resume_listTitle{
+                                font-size: 16px;
+                                line-height: 1.5;
+                                letter-spacing: 1px;
+                                margin-bottom: 5px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+
+                            .resume_listTitle a{
+                                color: #000;
+                                text-decoration: none;
+                            }
+
+                            .resume_listTitle a:hover{
+                                opacity: 0.7;
+                                transition: 0.3s ease all;
+                            }
+
+                            .resume_listDate{
+                                color: #A0A0A0;
+                                font-size: 12px;
+                                line-height: 1.5;
+                                letter-spacing: 1px;
+                                margin-bottom: 5px;
+                            }
+                            
+                            .resume_listDate::before{
+                                content: '';
+                                background-image: url(../images/clock.png);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                width: 15px;
+                                height: 15px;
+                                display: inline-block;
+                                margin-right: 3px;
+                                margin-bottom: 2px;
+                                vertical-align: middle;
+                            }
+
+                            .resume_listBrief{
+                                font-size: 14px;
+                                line-height: 1.5;
+                                letter-spacing: 1px;
+                            }
+
+                    .resume_education{
+                        display: flex;
+                        justify-content: space-between;
+                    }     
+                    .resume_education span{
+                        font-size: 18px;
+                    }   
+                    .resume_education span.univer{
+                        color: #645e5e;
+                        font-size: 16px;
+                        display: block;
+                    }    
+@media(max-width:768px){
+    .resume_list {
+        width: 47%;
+        margin-top: 15px;
+    }
+    .resume_list.first {
+        margin-top: 15px;
+    }
+}
+@media(max-width:640px){
+    .resume_box {
+        padding: 20px 25px;
+    }
+        .resume_selfIntro {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .resume_name h1 {
+            font-size: 20px;
+            line-height: 40px;
+        }
+        .resume_infoArea {
+            padding: 5px 10px;
+        }
+        .resume_info span {
+            font-size: 16px;
+        }
+        .resume_selfL {
+            width: calc(100% - 100px);
+        }
+        .resume_selfR {
+            width: 100px;
+        }
+        .resume_avatar {
+            width: 100px;
+        }
+        .resume_title {
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
+            .resume_title h2 {
+                font-size: 20px;
+            }
+            .resume_title span.en {
+                font-size: 16px;
+            }
+        .resume_content {
+            padding: 5px 10px;
+        }
+        .resume_contentBox {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .resume_icon {
+            margin: 0 5px 15px 0;
+        }
+        .resume_icon span {
+            font-size: 16px;
+        }
+        .resume_icon span::before {
+            width: 20px;
+            height: 20px;
+        }
+        .resume_list {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .resume_list.first {
+            margin-top: 15px;
+        }
+        .resume_list:first-of-type {
+            margin-top: 0px;
+        }
+        .resume_education span {
+            font-size: 16px;
+        }
+        .resume_content span {
+            font-size: 16px;
+        }
+}
+@media(max-width:500px){
+    .resume_info span {
+        font-size: 14px;
+    }
+    .resume_icon span {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+    .resume_info i {
+        display: none;
+    }
+    .resume_infoArea {
+        padding: 5px 0px;
+    }
+
+}
